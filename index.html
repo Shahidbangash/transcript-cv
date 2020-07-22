@@ -1,310 +1,317 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- <!var  Required meta tags var > -->
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    <!-- <!var  Bootstrap CSS var > -->
+<head>
+  <!-- <!var  Required meta tags var > -->
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <title>CV extaction assignment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  <!-- <!var  Bootstrap CSS var > -->
+
+  <title>CV extaction assignment</title>
 
 
-    <script type="text/javascript">
-      var main_color = "#2251b2";
-      var font_color = "#444444";
-      var box_hieght = "200px";
-      var picture_hieght = "290px";
-      var picture_width ="200px";
-      var maximum_width =  "1654px";
-      var picture_margin_left = "165px";
-      var picture_margin_top = "85px";
-      var picture_margin_bottom = "95px";
-      var picture_margin_right = "90px";
-      var margin_below_line = "20px";
-      var container_width = "1356px";
+  <script type="text/javascript">
+    var main_color = "#2251b2";
+    var font_color = "#444444";
+    var box_hieght = "200px";
+    var picture_hieght = "290px";
+    var picture_width = "200px";
+    var maximum_width = "1654px";
+    var picture_margin_left = "165px";
+    var picture_margin_top = "85px";
+    var picture_margin_bottom = "95px";
+    var picture_margin_right = "90px";
+    var margin_below_line = "20px";
+    var container_width = "1356px";
 
-      $(document).ready(function(){
+    // document.getElementsByClassName("namefield").firstChildelement.innerHTML = "HI";
+    $(document).ready(function () {
+
+      // list.getElementsByClassName("child")[1].innerHTML = "Milk";
+
+      document.getElementsByClassName("name_field")[0].children[0].innerHTML = "Shahid Bangash";
+      document.getElementsByClassName("name_field")[0].children[1].innerHTML = "software engineer";
+
       $(".top_part_box").css({
-      "background-color" : "#2251b2" ,
-      'max-height' : box_hieght ,
-      "min-height" : "250px",
-      "border-bottom" : "4px solid black ",
-      // "margin" : "0px" 
-       });
+        "background-color": "#2251b2",
+        'max-height': box_hieght,
+        "min-height": "250px",
+        "border-bottom": "4px solid black ",
+        // "margin" : "0px" 
+      });
+
+      //  document.getElementsByClassName('.name_field').firstElementchild.innerHTML = "Shaihd Khan";
 
 
 
       $("img").css({
         "display": "inline",
-        "height" : picture_hieght ,
-        "width" : picture_width ,
-        "position" : "absolute",
-        "left" : picture_margin_left,
-        "top" : picture_margin_top
-        });
+        "height": "200px",
+        "width": "200px",
+        "position": "absolute",
+        "left": picture_margin_left,
+        "top": picture_margin_top,
+        "border": "4px solid black",
+        "border-radius": "50%"
+      });
 
 
       $(".name_field").css({
-        "display" : "inline-block" ,
-        "color" : "#ffff",
-        "position" : "absolute",
-        "left" : "500px",
-        "top" : picture_margin_top
-        
-        });
-
-        $("h3").css({
-          "font-family" : 'Source Sans Pro' ,
-          "text-transform" : "uppercase"        
-        });
-
-        $("h1").css({
-          "font-weight" : "700",
-          "text-transform" : "uppercase" ,  
-          "font-size" : "45px"
-        });
-
-
-        $("h2").css({
-          "font-weight" : "500",
-          "text-transform" : "uppercase" ,
-          "font-size" : "20px",
-
-        });
-
-        $(".personal_profile").css({
-          "display" : "inline-block" , 
-          "width" : picture_width,
-          "margin-left" : picture_margin_left ,
-          // "margin-top" : "0px" ,
-        });
-
-
-
-        $("hr").css({
-          "border": "2px solid "
-        });
-
-
-        $(".contact_address").css({
-
-          "margin-left" : "500px",
-          "margin-top" : "30px",
-          "height" : "155px",
-          "width" : "700px",
-          // "margin-bottom" : "10px"
-        });
-
-        $(".contact_address p").css({
-          "display" : "inline-block" ,
-          "width" : "170px",
-          "font-size" : "18px",
-
-          "margin-right" : "100px",
-          // "margin-left" : "auto"
-
-        });
-
-
-        $(".contact_address p span").css({
-          "text-transform" : "capitalize"
-        });
-
-        $(".work_experiance").css({
-          "display" : "inline-block" , 
-          "width" : "700px",
-          // "margin-top" : 10px ,
-          "margin-left" : "112px" ,
-        });
+        "display": "inline-block",
+        "color": "#ffff",
+        "position": "absolute",
+        "left": "500px",
+        "top": picture_margin_top
 
       });
-    </script>
+
+      $("h3").css({
+        "font-family": 'Source Sans Pro',
+        "text-transform": "uppercase"
+      });
+
+      $("h1").css({
+        "font-weight": "700",
+        "text-transform": "uppercase",
+        "font-size": "45px"
+      });
 
 
 
+      $("h2").css({
+        "font-weight": "500",
+        "text-transform": "uppercase",
+        "font-size": "20px",
+
+      });
+
+      // <div class="personal_profile">               
+      //     <hr>      
+      document.getElementsByClassName("personal_profile")[0].children[1].innerHTML = "personal profile";
+      document.getElementsByClassName("personal_profile")[0].children[2].innerHTML = "A software engineer with hands on experiance in all level of testing , including performance , functional requirements , system integration";
+      document.getElementsByClassName("personal_profile")[0].children[4].innerHTML = "Area of Expertise";
+      document.getElementsByClassName("personal_profile")[0].children[7].innerHTML = "Other skills";
 
 
 
-  </head>
-  <body class="">
-    <div class="top_part_box">
-        
-        <div class="name_field">
-          
-          <h3>Software engineer</h3>
-          <h1>Shahid <br><span>Bangash</span> </h1> 
-         
-        </div>
-      </div>
-      <div class="container profile_image" >
-        <img id="img"  src="images/my profile pc.jpeg" alt="">
-      </div>
-
-      <div class="contact_address ">
-        <h2>get in contact</h2>
-        <p><span>home:</span> 123-456-789</p>
-        <p>hello@Shahidbangash.com</p>
-        <p><span>mobile:</span> 123-456-789</p>
-        <p>wwww.shahidbanagash.com</p>
-
-      </div>
-
-      <!-- <div> -->
-        <div style="display: flex ; align-items: flex-start;" >
-
-          
-          
-          <div class="personal_profile">        
-            
-            <hr>      
-            <h2>personal profile</h2>
-            <p>
-              A software engineer with hands on experiance in all level of testing , including performance , functional requirements , system integration
-            </p>  
-            
-          
-            <hr>      
-          <h2>Area of Expertise</h2>
-          <ul>
-            <li>Hands-on SQL experiance</li>
-            <li>Java , PHP , PYTHON , DART and JAVASCRIPT experiance</li>
-            <li>Rest APi experiance</li>
-            <li>Working knowledge of C and C++</li>
-          </ul>
-          
-
-          <hr>      
-          <h2>Other skills</h2>
-          <ul>
-            <li>The ability to analyze complex technical information</li>
-            
-            <li>Can analyze , design and implement database structures</li>
-            
-            <li> Excellent problem solver</li>
-          </ul>    
-          
-          
-
-        </div> 
-
-        <div class="work_experiance">   
-          
-          
-
-          
-          <hr> 
-          <h2>Work experiance</h2>
-          <h3>Software Developer</h3>
-          <p>
-            Sofit consultancy 2019 | present
-          </p>
-          <ul>
-            <li>
-              Developing quality assurance procedures
-            </li>
-            <li>
-              Deploying software tools, processes and metrics
-            </li>
-            <li>
-              Maintaining and upgrading existing systems
-            </li>
-          </ul> 
-          
-          
-          
-          
-          <h3>Interne</h3>
-          <p>
-            Sofit consultancy 2018 | 2019
-          </p>
-          <ul>
-            <li>
-              Web designning
-            </li>
-            <li>
-              mobile application Developement
-            </li>
-          </ul>
-          
-          
-          
-          <hr> 
-          
-          <h2>education history</h2>
-          <h3>Comsats university islamabad </h3>
-          <p>
-            Bachelor of Software engineering 2018 | Present
-          </p>
-          <ul>
-            <li>
-              Vice president ILC
-            </li>
-            <li>
-              Member of Computer Science Society
-            </li>
-            
-          </ul> 
-          
-          
-          <h3>Army Public College</h3>
-          <p>
-            FSC 2015 | 2017
-          </p>
-          <ul>
-            <li>
-              Debate team vice president
-            </li>
-            <li>
-              Student council president
-            </li>
-            <li>
-              Member of Math team
-            </li> 
-          </ul>
-          
-          <h3>Air Foundation School</h3>
-          <p>
-            Matric 2013 | 2015
-          </p>
-          <ul>
-            <li>
-              Debate team  president
-            </li>
-            <li>
-              Member of Math team
-            </li>
-            <li>
-              Captain of School Cricket team
-            </li>
+      $(".personal_profile").css({
+        "display": "inline-block",
+        "width": picture_width,
+        "margin-left": picture_margin_left,
+        // "margin-top" : "0px" ,
+      });
 
 
-            
-            
-            
-            
-          </ul> 
-          
-          
-        </div>
-        
-      </div>
-        
-        <!-- </div> -->
+
+      $("hr").css({
+        "border": "2px solid "
+      });
 
 
-        
-    
+      $(".contact_address").css({
 
-        
+        "margin-left": "500px",
+        "margin-top": "30px",
+        "height": "155px",
+        "width": "700px",
+        // "margin-bottom" : "10px"
+      });
+      document.getElementsByClassName("contact_address")[0].children[0].innerHTML = "Get in Contact ";
+      document.getElementsByClassName("contact_address")[0].children[1].innerHTML = "Home: 123-456-789";
+      document.getElementsByClassName("contact_address")[0].children[2].innerHTML = "hello@Shahidbangash.com";
+      document.getElementsByClassName("contact_address")[0].children[3].innerHTML = "Mobile:123-456-789";
+      document.getElementsByClassName("contact_address")[0].children[4].innerHTML = "wwww.shahidbanagash.com";
 
-    <!-- <!var  Optional JavaScript var > -->
-    <!-- <!var  jQuery first, then Popper.js, then Bootstrap JS var > -->
-  </body>
+
+
+      $(".contact_address p").css({
+        "display": "inline-block",
+        "width": "170px",
+        "font-size": "18px",
+
+        "margin-right": "100px",
+        // "margin-left" : "auto"
+
+      });
+
+
+      $(".contact_address p span").css({
+        "text-transform": "capitalize"
+      });
+
+      $(".work_experiance").css({
+        "display": "inline-block",
+        "width": "700px",
+        // "margin-top" : 10px ,
+        "margin-left": "112px",
+      });
+
+      document.getElementsByClassName("work_experiance")[0].children[1].innerHTML = "work experiance ";
+      document.getElementsByClassName("work_experiance")[0].children[2].innerHTML = "Software Developer";
+      document.getElementsByClassName("work_experiance")[0].children[2].innerHTML = "Sofit consultancy 2019 | present ";
+      document.getElementsByClassName("work_experiance")[0].children[5].innerHTML = "Interne";
+      document.getElementsByClassName("work_experiance")[0].children[6].innerHTML = "Sofit consultancy 2018 | 2019 ";
+
+
+
+    });
+  </script>
+
+
+
+</head>
+
+<body class="">
+  <div class="top_part_box">
+
+    <div class="name_field">
+
+      <h1>Shahid <span>Bangash</span> </h1>
+      <h3>Software engineer</h3>
+
+    </div>
+  </div>
+  <div class="container profile_image">
+    <img id="img" src="images/my profile pc.jpeg" alt="">
+  </div>
+
+  <div class="contact_address ">
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+  </div>
+
+  <!-- <div> -->
+  <div style="display: flex ; align-items: flex-start;">
+
+
+
+    <div class="personal_profile">
+
+      <hr>
+      <h2></h2>
+      <p>
+
+      </p>
+
+
+      <hr>
+      <h2></h2>
+      <ul>
+        <li>Hands-on SQL experiance</li>
+        <li>Java , PHP , PYTHON , DART and JAVASCRIPT experiance</li>
+        <li>Rest APi experiance</li>
+        <li>Working knowledge of C and C++</li>
+      </ul>
+
+
+      <hr>
+      <h2> </h2>
+      <ul>
+        <li>The ability to analyze complex technical information</li>
+
+        <li>Can analyze , design and implement database structures</li>
+
+        <li> Excellent problem solver</li>
+      </ul>
+
+    </div>
+
+    <div class="work_experiance">
+
+      <hr>
+      <h2></h2>
+      <h3></h3>
+      <p>
+
+      </p>
+      <ul>
+        <li>
+          Developing quality assurance procedures
+        </li>
+        <li>
+          Deploying software tools, processes and metrics
+        </li>
+        <li>
+          Maintaining and upgrading existing systems
+        </li>
+      </ul>
+
+
+
+      <h3></h3>
+      <p>
+      </p>
+      <ul>
+        <li>
+          Web designning
+        </li>
+        <li>
+          mobile application Developement
+        </li>
+      </ul>
+      <hr>
+
+      <h2>education history</h2>
+      <h3>Comsats university islamabad </h3>
+      <p>
+        Bachelor of Software engineering 2018 | Present
+      </p>
+      <ul>
+        <li>
+          Vice president ILC
+        </li>
+        <li>
+          Member of Computer Science Society
+        </li>
+
+      </ul>
+
+      <h3>Army Public College</h3>
+      <p>
+        FSC 2015 | 2017
+      </p>
+      <ul>
+        <li>
+          Debate team vice president
+        </li>
+        <li>
+          Student council president
+        </li>
+        <li>
+          Member of Math team
+        </li>
+      </ul>
+
+      <h3>Air Foundation School</h3>
+      <p>
+        Matric 2013 | 2015
+      </p>
+      <ul>
+        <li>
+          Debate team president
+        </li>
+        <li>
+          Member of Math team
+        </li>
+        <li>
+          Captain of School Cricket team
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+
 </html>
